@@ -1,37 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "e2821651063448d29a8e89096ad6993e3a9f8026c5455521c6f0f78fc51dc252",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://raw.githubusercontent.com/AdobeDocs/workfront-apis/main/static/workflow.json"
-  ],
   "id": "adobe-workfront-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "Adobe Workfront MCP setup and connection checker",
-  "description": "Generate Adobe Workfront MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare Adobe Workfront for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-adobe-workfront-mcp",
+  "sourceRevision": "8842b4a8a80fd4d7bda5e9b7ddbade928de58e60ab68dd3ea2f796ad74752e36",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://raw.githubusercontent.com/AdobeDocs/workfront-apis/main/static/workflow.json"
+  ],
+  "utility": {
+    "problem": "Prepare Adobe Workfront and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "adobe-workfront",
   "appName": "Adobe Workfront",
-  "providerDocs": "https://raw.githubusercontent.com/AdobeDocs/workfront-apis/main/static/workflow.json",
-  "providerWebsite": "https://experienceleague.adobe.com/en/docs/workfront",
-  "authentication": {
-    "type": "api_key_query",
-    "requiredCredentialFields": [
-      "api_key"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/api-general-information/api-basics",
-    "tenantRequired": true,
-    "accountParameterNames": []
-  },
-  "attributionSlug": "github-adobe-workfront-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-adobe-workfront",
+      "description": "Connect AI agents to Adobe Workfront using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-adobe-workfront/SKILL.md": "e8f91a754ef0b5910de4053b4b5c8c469f74ea84bb8ea96f798dc7394a66ad9d"
+  }
+}
